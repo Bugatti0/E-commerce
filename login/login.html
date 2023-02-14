@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Stone Paper Scissors</title>
+	</head>
+
+	<body>
+		<canvas id="canvas1"></canvas>
+		<div
+			class="container"
+			id="container"
+		>
+			<div class="form-container log-in-container">
+				<form
+					class="login_form"
+					action="../main/index.html"
+					method="post"
+					name="form"
+					onsubmit="return validated()"
+				>
+					<h1>LOGIN</h1>
+					<br /><br />
+					<input
+						name="email"
+						type="text"
+						placeholder="Email id"
+					/><br />
+					<input
+						name="password"
+						type="password"
+						placeholder="Password"
+					/><br />
+					<div class="error"></div><br />
+					<input
+						type="submit"
+						value="Log In"
+					/>
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-right">
+						<img
+							class="left-img"
+							src="login1.gif"
+							alt="college entrance"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="valid.js"></script>
+</html>
